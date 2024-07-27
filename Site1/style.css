@@ -49,16 +49,28 @@ body{
     gap: 32px;
 }
 
-.apresentacao-links-bt{
+.apresentacao-links-subtitulo{
+    font-family: "Krono One", sans-serif;
+    font-size: 24px;
+}
 
-    background-color: #22d3fd;
-    width: 280px;
+.apresentacao-links-bt{
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border: 2px solid #22d3fd;
+    border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao-links-bt:hover{
+    background-color: #272727;
 }
