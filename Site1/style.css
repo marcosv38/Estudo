@@ -13,12 +13,30 @@ body{
    
 }
 
+.cabecalho-menu-link{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: #22D4fd;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 80px;
+}
+
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
 .destaque-titulo{
     color: #22D4fd;
 }
 
 .apresentacao{
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
