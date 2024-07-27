@@ -26,7 +26,9 @@ body{
 
 .apresentacao-conteudo{
     width: 615px;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao-conteudo-titulo{
@@ -37,4 +39,23 @@ body{
 .apresentacao-conteudo-texto{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao-links-bt{
+
+    background-color: #22d3fd;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
