@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Cor-Primaria: #000000;
+    --Cor-Secundaria:white;
+    --Cor-Terciaria: #22D4fd;
+    --Cor-Hover: #272727;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +15,8 @@
 body{
     /* height: 100vh; */
     
-    background-color: black;
-    color: white;
+    background-color: var(--Cor-Primaria);
+    color: var(--Cor-Secundaria);
     box-sizing: border-box;
    
 }
@@ -18,7 +26,7 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-size: 24px;
-    color: #22D4fd;
+    color: var(--Cor-Terciaria);
 }
 
 .cabecalho-menu{
@@ -32,7 +40,7 @@ body{
 }
 
 .destaque-titulo{
-    color: #22D4fd;
+    color: var(--Cor-Terciaria);
 }
 
 .apresentacao{
@@ -75,12 +83,12 @@ body{
 .apresentacao-links-bt{
     width: 378px;
     text-align: center;
-    border: 2px solid #22d3fd;
+    border: 2px solid var(--Cor-Terciaria);
     border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: white;
+    color: var(--Cor-Secundaria);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     display: flex;
@@ -90,12 +98,12 @@ body{
 }
 
 .apresentacao-links-bt:hover{
-    background-color: #272727;
+    background-color:var(--Cor-Hover);
 }
 
 .rodape{
-    color: #000;
-    background-color: #22D4fd;
+    color: var(--Cor-Primaria);
+    background-color: var(--Cor-Terciaria);
     padding: 24px 0;
     text-align: center;
     font-family: "Montserrat", sans-serif;
