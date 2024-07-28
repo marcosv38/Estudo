@@ -28,3 +28,12 @@ h1{
 .container{
     height: 100vh;
 }
+
+.container__botao{
+    background-color: var(--Bt-Azul);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1em;
+    color: var(--Branco-Principal);
+    display: block;
+}
