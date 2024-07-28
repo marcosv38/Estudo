@@ -86,3 +86,12 @@ body{
 .descricao_texto{
     color: var(--Cinza-Secundaria);
 }
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteiner__descricao{
+    padding: 2em;
+}
