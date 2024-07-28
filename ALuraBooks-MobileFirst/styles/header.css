@@ -28,8 +28,29 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .conteiner__botao:checked~.lista-menu{
     display: block;
+}
+
+.lista__menu__titulo, .lista__menu__item{
+    padding: 1em;
+    background-color: var(--branco-fundo);
+}
+
+.lista__menu__titulo{
+    color: var(--laranja);
+}
+
+.lista-menu__link{
+
+    background: var(--azul-degrade);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
