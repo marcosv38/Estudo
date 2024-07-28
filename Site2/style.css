@@ -27,6 +27,8 @@ h1{
 
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__botao{
@@ -36,4 +38,11 @@ h1{
     padding: 1em;
     color: var(--Branco-Principal);
     display: block;
+}
+
+.container__botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--Branco-Principal);
+    text-decoration: none;
+    color: var(--Branco-Principal);
 }
