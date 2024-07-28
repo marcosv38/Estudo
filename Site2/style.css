@@ -5,3 +5,17 @@
     --Cor-de-fundo: #00030c;
 
 }
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--Cor-de-fundo);
+}
+
+h1{
+    color: #FFFFFF;
+}
+
