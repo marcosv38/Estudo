@@ -13,8 +13,7 @@
 }
 
 body{
-    /* height: 100vh; */
-    
+      
     background-color: var(--Cor-Primaria);
     color: var(--Cor-Secundaria);
     box-sizing: border-box;
@@ -25,13 +24,13 @@ body{
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--Cor-Terciaria);
 }
 
 .cabecalho-menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 
@@ -48,22 +47,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao-conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .apresentacao-conteudo-titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona One',sans-serif;
 }
 
 .apresentacao-conteudo-texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -72,20 +72,20 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .apresentacao-links-subtitulo{
     font-family: "Krono One", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao-links-bt{
-    width: 378px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--Cor-Terciaria);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--Cor-Secundaria);
@@ -94,7 +94,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .apresentacao-links-bt:hover{
@@ -104,9 +104,32 @@ body{
 .rodape{
     color: var(--Cor-Primaria);
     background-color: var(--Cor-Terciaria);
-    padding: 24px 0;
+    padding: 1.5rem 0;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+.apresentacao-img{
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+   
+    .cabecalho-menu{
+     justify-content: center;   
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao-conteudo{
+        width: auto;
+    }
+
+    
 }
