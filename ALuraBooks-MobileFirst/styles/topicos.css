@@ -2,3 +2,7 @@
     background-color: var(--azul-degrade);
     text-align: center;
 }
+
+.topicos__titulos{
+    color: var(--branco);
+}
