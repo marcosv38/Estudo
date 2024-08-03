@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-areas: "aside header" "aside main";
+    grid-template-areas: "aside header" "aside main" "section section";
     grid-template-columns: auto 1fr;
 }
 
@@ -14,4 +14,8 @@ body{
 
 .principal{
     grid-area: main;
+}
+
+.secao-player{
+    grid-area: section;
 }
