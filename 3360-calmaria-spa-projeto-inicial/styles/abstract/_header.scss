@@ -1,0 +1,68 @@
+@use './abstract/variaveis';
+
+header{
+    background: variaveis.$gradiente-primario;
+    padding: 2rem;
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        .linha{
+            border-top: 1px solid black;
+            width: 80%;
+        }
+        ul{
+            display: inline-flex;
+            gap: 2rem;
+            li{
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+                color: $cor-primaria;
+                font-weight: 500;
+                font-family: $ft-textos;
+            }
+        }
+    }
+
+    #home{
+        max-width: 1040px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .textos-home{
+            max-width: 464px;
+            h1{
+                font-size: 42px;
+                color: variaveis.$cor-primaria;
+                margin-bottom: 2rem;
+                font-family: variaveis.$ft-titulos;
+                span{
+                    color: variaveis.$cor-secundaria;
+                }
+            }
+
+            .btn-main{
+                color: rgba(255, 255, 255, 1);
+                background-color: variaveis.$cor-secundaria;
+                border-radius: 40px;
+                font-size: 1.375rem;
+                font-weight: 600;
+                padding: 1.5rem 3.71rem;
+                border-color: transparent;
+            }
+
+        }
+
+        .img-home{
+            max-width: 474px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
