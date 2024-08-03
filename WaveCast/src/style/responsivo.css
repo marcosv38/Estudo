@@ -66,6 +66,10 @@
         padding: 1.25rem;
     }
 
+    .menu-lateral{
+        width: 208px;
+    }
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -74,5 +78,7 @@
     .cabecalho__logo {
         display: none;
     }
-
+    .menu-lateral{
+        width: 228px;
+    }
 }
