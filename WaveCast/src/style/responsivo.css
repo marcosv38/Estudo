@@ -31,6 +31,10 @@
         padding: 0;
     }
 
+    .cabecalho{
+        justify-self: center;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {
