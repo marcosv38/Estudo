@@ -1,5 +1,4 @@
-@use './abstract/variaveis';
 @use './abstract/root';
-@use './components/header';
-
-
+@use './componentes/header';
+@use './componentes/nosso-espaco';
+@use './componentes/servicos.scss';

@@ -1,11 +1,11 @@
 @charset "UTF-8";
-/*variáveis*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*variáveis*/
 header {
   background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
   padding: 2rem;
@@ -29,14 +29,15 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
   color: #0C0421;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
 }
 header #home {
   max-width: 1040px;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,4 +68,65 @@ header #home .img-home {
 }
 header #home .img-home img {
   width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+#nosso-espaco .detalhes {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos .titulo {
+  font-size: 1.8rem;
+  font-family: "Krona One", sans-serif;
+  color: #4e75ff;
+  font-weight: 500;
+}
+#nosso-espaco .detalhes .espaco-textos .infos {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #0C0421;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco :nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+#servico {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 5rem 0;
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+}
+#servico .cards .card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3rem;
+}
+#servico .cards .card-titulo {
+  font-size: 1.6rem;
+  font-family: "Krona One", sans-serif;
+  color: #0C0421;
+}
+#servico .cards .card-texto {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #0C0421;
 }/*# sourceMappingURL=styles.css.map */
