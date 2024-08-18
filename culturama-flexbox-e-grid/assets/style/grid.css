@@ -66,3 +66,33 @@
     }
     
 }
+
+@media (min-width: 1440px){
+    .categorias{
+        display: grid;
+
+        grid-template-areas: 
+            "titulo titulo"
+            "botoes destaques"
+            "botoes imagem"
+        ;
+
+        column-gap: 1.5rem;
+    }
+
+    .categorias__titulo{
+        grid-area: titulo;
+    }
+
+    .categorias__lista{
+        grid-area: botoes;
+    }
+
+    .categorias__destaques{
+        grid-area: destaques;
+    }
+
+    .categorias__imagem{
+        grid-area: imagem;
+    }
+}
