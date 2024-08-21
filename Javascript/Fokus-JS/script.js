@@ -18,7 +18,7 @@ const startPause = document.querySelector('#start-pause');
 const iniciarOuPausarBt = document.querySelector('#start-pause span');
 const iconeIniciarOuPausarBt = document.querySelector('.app__card-primary-butto-icon');
 
-let tempoDecorridoEmSegundos = 2;
+let tempoDecorridoEmSegundos = 1500;
 let intervaloId = null;
 
 musica.loop = true;
@@ -35,7 +35,7 @@ musicaFocoInput.addEventListener('change', () => {
 
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 2;
+    tempoDecorridoEmSegundos = 1500;
     alterarContexto('foco');
     focoBt.classList.add('active');
    
