@@ -1,10 +1,11 @@
 import './Time.css';
 
 const Time = (props) => {
-    return(
+    const css = {backgroundColor: props.corSecundaria};
 
-        <section className='time'>
-            <h3>{props.nome}</h3>
+    return(
+        <section className='time' style={css}>
+            <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
         </section>
 
     );
