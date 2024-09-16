@@ -1,0 +1,82 @@
+npm create vite@latest - criar vite é mais recomendado para SPA para vários frameworks via JS ou TYPESCRIPT
+
+npm run dev - após a instalação rodar o vite
+
+==========================================================================
+
+Utilizando o styled componentes - Documentação: https://styled-components.com/docs/basics#installation
+
+npm install styled-components - instalando os componentes.
+
+==========================================================================
+
+criando componentes com o styled-components:
+
+const exemplo = styled.div`
+	CSS do componente
+`;
+
+==========================================================================
+
+reset css: https://necolas.github.io/normalize.css/
+
+Colocando estilos globais através do styled-components: usando função do styled-components "createGlobalStyle``"
+
+=========================================================================
+
+Passando valor de uma props para um styled-component: <ExemploDeStyled-Component $variavel={prop}/>
+
+aplicando no css:
+
+exemplo:
+
+color: ${$variavel} ou utilizando arrow function: color: ${props => props.$variável ? #FFF : #000} para uma variável booleana
+
+=========================================================================
+
+importando fontes com o css:
+
+import nomeDaFonte from 'src';
+
+@font-face{
+  font-family:;
+  src: local(nome da fonte com espaços), local(nome da fonte sem os espaços), url($nomeDaFonte);
+}
+
+=========================================================================
+
+TrueType Font (TTF): É um formato de fonte amplamente utilizado em sistemas operacionais Windows e Mac. É compatível com a maioria dos programas e oferece suporte a recursos avançados, como kerning e hinting.
+
+OpenType Font (OTF): É um formato de fonte desenvolvido pela Adobe e pela Microsoft, que combina os recursos do TrueType e do formato PostScript. O OpenType oferece suporte a recursos avançados, como ligaturas, glifos alternativos e fontes com múltiplos idiomas.
+
+PostScript Font (PS): É um formato de fonte desenvolvido pela Adobe. As fontes PostScript são amplamente utilizadas em impressoras e gráficos profissionais. Elas são baseadas em vetores e fornecem alta qualidade de impressão.
+
+Web Open Font Format (WOFF): É um formato de fonte especialmente projetado para uso na web. O WOFF comprime as fontes para um tamanho menor, o que resulta em tempos de carregamento mais rápidos para páginas da web. O WOFF2 é uma versão mais recente e eficiente do WOFF.
+
+=========================================================================
+
+
+useState
+O useState é usado para adicionar estado aos componentes funcionais do React. Você pode usar essa função para criar uma variável de estado e uma função para atualizá-la. Por exemplo, você pode criar um contador em um componente e atualizá-lo quando um botão for clicado.
+
+
+useEffect
+Já o useEffect é usado para executar ações extras em um componente funcional. Por exemplo, você pode usá-lo para buscar dados de uma API assim que o componente for exibido na tela. É como um bloco de código que é executado automaticamente em determinados momentos.
+
+ useEffect(() => {
+    async function buscarDados() {
+      try {
+        const response = await fetch('https://api.exemplo.com/dados');
+        setDados(await response.json());
+      } catch (error) {
+        console.error('Erro:', error);
+      }
+      setCarregando(false);
+    }
+
+    buscarDados();
+  }, []);
+
+Os colchetes no final [] serve para dizer que o bloco de código só será percorrido apenas uma vez, caso seja necessário vigiar a mudança de algum componente é só colocar dentro dos colchetes e será percorrido quando esse componente for alterado também.
+
+
